@@ -1,17 +1,15 @@
 package Stepdefinition;
 
 import org.junit.runner.RunWith;
-
-import io.cucumber.testng.CucumberOptions;
 import io.cucumber.junit.Cucumber;
-
+import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Feature/Google.feature",glue= {"stepDefinition"},
-					monochrome = true,
-			plugin = { "pretty", "html:target/HTMLreports" }
-			)
-			public class Testrunner {
+@CucumberOptions(features = "src/test/resources/Feature", glue = {"Stepdefinition" },
+monochrome= true,
+plugin = {"pretty","html: target/HTMLReports"})
 		
+public class Testrunner {
 
 }
+
