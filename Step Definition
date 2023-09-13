@@ -1,0 +1,42 @@
+package Stepdefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
+
+public class Searchgoogletext {
+	
+	WebDriver drive = null;
+	@Given("^open google search$")
+	public void open_google_search() throws Throwable {
+		  {
+		       WebDriver driver = new ChromeDriver();
+		        driver.manage().window().maximize();
+		        driver.get("https://www.apple.com/");
+		    }
+	}
+
+	@And("^enter the text$")
+	public void enter_the_text() throws Throwable {
+	   
+	}
+
+	@When("^click search button$")
+	public void click_search_button() throws Throwable {
+	    
+	}
+
+	@Then("^show search results$")
+	public void show_search_results() throws Throwable {
+	    
+	}
+
+
+}
