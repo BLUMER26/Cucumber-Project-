@@ -1,0 +1,10 @@
+
+Feature: Title of your feature
+  I want to use this template for my feature file
+
+
+  Scenario: google search
+    Given open google search
+    And enter the text 
+    When click search button
+    Then show search results
